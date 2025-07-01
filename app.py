@@ -23,4 +23,6 @@ def ask():
         })
 
     except Exception as e:
+        print("Error calling OpenAI:", str(e))
         return jsonify({"error": str(e)}), 500
+    
